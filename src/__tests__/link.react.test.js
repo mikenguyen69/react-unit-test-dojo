@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from './link.react'
+import Link from '../snapshot/link.react'
 import Renderer from 'react-test-renderer'
 
 it('renders correctly', () => {
