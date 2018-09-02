@@ -4,7 +4,7 @@ import Renderer from 'react-test-renderer'
 
 it('renders correctly', () => {
     const tree = Renderer
-    .create(<Link page="http://www.facebook.com">Facebook</Link>)
+    .create(<Link page="https://github.com/mikenguyen69?tab=repositories">My Github</Link>)
     .toJSON();
     expect(tree).toMatchSnapshot();
 })

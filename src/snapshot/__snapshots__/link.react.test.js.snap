@@ -14,10 +14,10 @@ exports[`renders another correctly 1`] = `
 exports[`renders correctly 1`] = `
 <a
   className="normal"
-  href="http://www.facebook.com"
+  href="https://github.com/mikenguyen69?tab=repositories"
   onMouseEnter={[Function]}
   onMouseLeave={[Function]}
 >
-  Facebook
+  My Github
 </a>
 `;
