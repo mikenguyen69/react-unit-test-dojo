@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders another correctly 1`] = `
+<a
+  className="normal"
+  href="https://dotnetsharing.wordpress.com"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  My personal blog
+</a>
+`;
+
+exports[`renders correctly 1`] = `
+<a
+  className="normal"
+  href="http://www.facebook.com"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  Facebook
+</a>
+`;
