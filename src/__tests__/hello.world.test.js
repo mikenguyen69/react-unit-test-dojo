@@ -1,3 +1,5 @@
+import ShallowRenderer from "react-test-renderer/shallow"
+    
 describe('HelloWorld', () => {
 
     const React = require('react')
@@ -16,7 +18,18 @@ describe('HelloWorld', () => {
         done()
     })
 
-     const HelloWorld1 = require("../basic/hello.world")
+    const HelloWorld = require("../basic/hello.world")
+
+    it('has props v2', (done) => {
+        const renderer = new ShallowRenderer()
+        renderer.render(<HelloWorld>Hey bros</HelloWorld>)
+
+        const hello = renderer.getRendererOutput();
+
+        expect(hello.props).toBeDefined()
+        console.log('Myhello props: ', hello.props)
+        done()
+    })
 
 
 
