@@ -16,6 +16,12 @@ describe('HelloWorld', () => {
         done()
     })
 
+    it('props value', (done) => {
+        expect(hello.props.children).toBe("Hello Bros")
+        console.log('Myhello props: ', hello.props)
+        done()
+    })
+
     it('has a div', (done) => {
         let div = TestUtils.scryRenderedDOMComponentsWithTag(hello, 'div').length
         expect(div).toBe(1)
