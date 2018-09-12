@@ -2,7 +2,7 @@ const React = require('react')
 
 class HelloWorld extends React.Component {
     render() {
-        return <div>{this.props.children}</div>
+        return <div><span>{this.props.children}</span><span>1</span></div>
     }
 }
 
@@ -26,6 +26,13 @@ describe('HelloWorld', () => {
         let div = TestUtils.scryRenderedDOMComponentsWithTag(hello, 'div').length
         expect(div).toBe(1)
         console.log('found this many divs: ', div)
+        done()
+    })
+
+    it('has two spans', (done) => {
+        let span = TestUtils.scryRenderedDOMComponentsWithTag(hello, 'span').length
+        expect(span).toBe(2)
+        console.log('found this many spans: ', span)
         done()
     })
 })
