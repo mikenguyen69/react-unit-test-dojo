@@ -2,7 +2,11 @@ const React = require('react')
 
 class HelloWorld extends React.Component {
     render() {
-        return <div><span>{this.props.children}</span><span>1</span></div>
+        return 
+        <div>
+            <span>{this.props.children}</span>
+            <span>1</span>
+        </div>
     }
 }
 
