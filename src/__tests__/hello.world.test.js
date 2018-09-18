@@ -6,6 +6,7 @@ class HelloWorld extends React.Component {
         <div>
             <span>{this.props.children}</span>
             <span>1</span>
+            <h3>this is awsome!</h3>
         </div>
     }
 }
@@ -37,6 +38,13 @@ describe('HelloWorld', () => {
         let span = TestUtils.scryRenderedDOMComponentsWithTag(hello, 'span').length
         expect(span).toBe(2)
         console.log('found this many spans: ', span)
+        done()
+    })
+
+    it('has a h3', (done) => {
+        let tg = TestUtils.scryRenderedDOMComponentsWithTag(hello, 'h3').length
+        expect(tg).toBe(1)
+        console.log('found this many h3: ', tg)
         done()
     })
 })
